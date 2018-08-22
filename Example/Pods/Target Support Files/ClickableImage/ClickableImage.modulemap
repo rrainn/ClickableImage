@@ -1,0 +1,6 @@
+framework module ClickableImage {
+  umbrella header "ClickableImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

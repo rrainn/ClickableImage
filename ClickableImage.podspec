@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ClickableImage'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ClickableImage.'
+  s.version          = '1.0.0'
+  s.summary          = 'ClickableImage is a extension that users to tap image views to expand them.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ClickableImage is an extension written in Swift for iOS that allows UIImageView's to be expanded to be made tappable by the user to expand the image full screen and allow them to pinch to zoom, and swipe the image away to dismiss.
                        DESC
 
-  s.homepage         = 'https://github.com/fishcharlie/ClickableImage'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/rrainn/ClickableImage'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'fishcharlie' => 'fishcharlie@me.com' }
-  s.source           = { :git => 'https://github.com/fishcharlie/ClickableImage.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'rrainn' => 'support@rrainn.com' }
+  s.source           = { :git => 'https://github.com/rrainn/ClickableImage.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/rrainn_inc'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ClickableImage/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ClickableImage' => ['ClickableImage/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  
+  s.swift_version = '4.2'
 end

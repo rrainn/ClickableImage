@@ -6,19 +6,29 @@
 //  Copyright (c) 2018 fishcharlie. All rights reserved.
 //
 
+import ClickableImage
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+	@IBOutlet weak var imageView: UIImageView!
+	@IBOutlet weak var statusLabel: UILabel!
+	
+	@IBAction func toggle(_ sender: Any) {
+		imageView.toggleClickableExpand()
+		updateStatusLabel()
+	}
+	@IBAction func on(_ sender: Any) {
+		imageView.enableClickableExpand()
+		updateStatusLabel()
+	}
+	@IBAction func off(_ sender: Any) {
+		imageView.disableClickableExpand()
+		updateStatusLabel()
+	}
+	
+	func updateStatusLabel() {
+		statusLabel.text = "Image is\(imageView.isClickableExpandEnabled ? "" : " not") clickable"
+	}
 }
 

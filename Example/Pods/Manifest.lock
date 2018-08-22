@@ -1,0 +1,16 @@
+PODS:
+  - ClickableImage (0.1.0)
+
+DEPENDENCIES:
+  - ClickableImage (from `../`)
+
+EXTERNAL SOURCES:
+  ClickableImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ClickableImage: aafa1d6613ff365e85f995671ed50d51551b11be
+
+PODFILE CHECKSUM: 372dd61f33d367caa70c25bf8d27c44fa558547f
+
+COCOAPODS: 1.5.3
