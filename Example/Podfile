@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ClickableImage_Example' do
+  pod 'ClickableImage', :path => '../'
+
+  target 'ClickableImage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
